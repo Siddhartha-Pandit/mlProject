@@ -16,12 +16,3 @@ class CustomeExceptions(Exception):
     def __str__(self):  
         return self.error_message
 
-
-if __name__ == "__main__":
-    try:
-        a=1/0
-    
-    except:
-        logging.info("Divide by 0 error")
-
-        raise CustomeExceptions
